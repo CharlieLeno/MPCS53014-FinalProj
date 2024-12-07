@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Submit Price</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("AirLines-white.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:5px"/>
+    <h2 class="elegant-aero" style="margin-left:auto;margin-right:auto;width:20%;text-align:center;color:#5E5E5E;background:#FFFFFF">&nbsp;Submit Price&nbsp;</h2>
+    <form action="/realtimePrice.html" style="background:#FFFFFF;width:60%;margin:auto"  method="get" class="elegant-aero">
+    <label>
+    <span>Electronic Product:</span>
+    <input type="text" name="name" value="Boytone - 2500W 2.1-Ch. Home Theater System - Black Diamond"/>
+    </label>
+    <label>
+        <span>Merchant:</span>
+        <input type="text" name="merchant" value="Bestbuy.com"/>
+    </label>
+    <label>
+        <span>Current Price:</span>
+        <input type="number" name="price" step="0.01" value="0.00"/>
+    </label>
+      <label>
+	<span>&nbsp;</span><input type="submit" value="Submit">
+      </label>
+    </form>
+    <iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Result</title>
+    <link type="text/css" rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <div style="margin-left:auto;margin-right:auto;text-align:center;width:45%;box-shadow: 10px 10px 5px #888888;border:1px solid #000000;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;background:white">
+      &nbsp;The Price for {{name}}&nbsp;</div>
+    <p style="bottom-margin:10px">
+      <table class="CSS_Table_Example" style="width:60%;margin:auto;">
+        <tr>
+          <th>Merchant</th>
+          <th>Average Price</th>
+          <th>Minimum Price</th>
+          <th>Maximum Price</th>
+        </tr>
+        {{#rows}}
+        <tr>
+          <td>{{merchant}}</td>
+          <td>{{avg_price}}</td>
+          <td>{{min_price}}</td>
+          <td>{{max_price}}</td>
+        </tr>
+        {{/rows}}
+    </table>
+    </p>
+    <div style="margin-top:50px;margin-left:auto;margin-right:auto;text-align:center;width:45%;box-shadow: 10px 10px 5px #888888;border:1px solid #000000;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;background:beige">
+      <h2>Latest Lowest Price</h2>
+      <h2>$ {{latest_price}}</h2>
+      <p style="bottom-margin:10px">Merchant: {{latest_merchant}}</p>
+    </div>
+</body></html>
