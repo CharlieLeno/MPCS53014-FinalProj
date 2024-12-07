@@ -52,7 +52,7 @@ From the ORC table, I created a Hive table to calculate the **maximum, minimum, 
 
 For the serving layer's front end, I developed a web interface to query the HBase table and display price analysis for various merchants. The combination of the device name and merchant serves as the key in HBase. When querying, a `scan` operation retrieves all rows with keys starting with the device name. On the front end, keys are parsed back into device names and merchants, and the data is formatted for clear presentation. Detailed code for this process is available in the `app` directory.
 
-![alt text](images\serving-layer.png)
+![alt text](images/serving-layer.png)
 
 ### Speed Layer
 
@@ -60,10 +60,10 @@ The application supports **real-time updates** by displaying the **latest lowest
 
 To simplify the process, a webpage (`submit-price.html`) allows to directly submit the latest lowest price and merchant information. This data is published to a Kafka topic named `price_qileichen`. The related code is in the `app` directory.
 
-![alt text](images\submit-price.png)
+![alt text](images/submit-price.png)
 
 A Speed Layer program subscribes to the Kafka topic. When new data is submitted, it processes the information and updates an HBase table called `latest_price_hbase_qileichen`. The front end is modified to query this table and display the **latest lowest price and corresponding merchant** to users.
-![alt text](images\latest-price.png)
+![alt text](images/latest-price.png)
 
 ## Acknowledgement
 
